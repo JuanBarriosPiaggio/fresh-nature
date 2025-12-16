@@ -119,14 +119,14 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     openGraph: {
       title: `${product.name} - Fresh Nature`,
       description: product.description,
-      images: ['/logo.svg'],
+      images: ['/logo.png'],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title: `${product.name} - Fresh Nature`,
       description: product.description,
-      images: ['/logo.svg'],
+      images: ['/logo.png'],
     },
   }
 }

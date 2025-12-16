@@ -40,7 +40,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <div className="flex justify-center mb-8">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="Fresh Nature Logo"
               width={120}
               height={120}

@@ -13,7 +13,7 @@ export default function Header() {
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="Fresh Nature Logo"
               width={40}
               height={40}

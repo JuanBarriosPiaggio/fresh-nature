@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   title: 'Fresh Nature - Natural Products for Your Home',
   description: 'Discover our range of natural, eco-friendly products including deodorant, hand wash, dishwashing soap, and shampoo.',
   icons: {
-    icon: '/logo.svg',
-    apple: '/logo.svg',
+    icon: '/logo.png',
+    apple: '/logo.png',
   },
   openGraph: {
     title: 'Fresh Nature - Natural Products for Your Home',
     description: 'Discover our range of natural, eco-friendly products',
-    images: ['/logo.svg'],
+    images: ['/logo.png'],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Fresh Nature - Natural Products for Your Home',
     description: 'Discover our range of natural, eco-friendly products',
-    images: ['/logo.svg'],
+    images: ['/logo.png'],
   },
 }
 
