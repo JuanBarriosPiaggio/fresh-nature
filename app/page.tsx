@@ -37,8 +37,18 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-nature-dark to-gray-900 text-white py-20 px-4">
-        <div className="container mx-auto text-center">
+      <section className="relative bg-nature-dark text-white py-20 px-4 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/Gemini_Generated_Image_vkunpzvkunpzvkun.png"
+            alt="Fresh Nature Natural Ingredients"
+            fill
+            className="object-cover opacity-40"
+            priority
+          />
+          <div className="absolute inset-0 bg-nature-dark bg-opacity-60"></div>
+        </div>
+        <div className="container mx-auto text-center relative z-10">
           <div className="flex justify-center mb-8">
             <Image
               src="/logo.png"
@@ -51,8 +61,8 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Fresh Nature
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Natural products for a healthier home and planet
+          <p className="text-xl md:text-2xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-lg">
+            Natural Products for a Healthier Home and Planet
           </p>
         </div>
       </section>
