@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#000000"/>
+  
+  <!-- Leaf -->
+  <path d="M 8 21 Q 7 16, 8 11 Q 9 7, 12 8 Q 13 9, 13 11 Q 12 13, 11 15 Q 9 16, 9 17 Q 8 19, 8 21 Z" fill="#5a8f5a"/>
+  <!-- Leaf veins -->
+  <line x1="9" y1="21" x2="10" y2="12" stroke="#ffffff" stroke-width="0.4" opacity="0.8"/>
+  
+  <!-- Water Droplet -->
+  <path d="M 19 9 Q 20 8, 21 9 Q 23 11, 23 13 Q 23 17, 20 20 Q 19 21, 17 21 Q 16 20, 16 17 Q 16 13, 17 11 Q 19 9, 19 9 Z" fill="#6bb3c0"/>
+  <!-- Droplet reflection -->
+  <path d="M 19 16 Q 19 15, 20 16 Q 19 17, 19 17 Z" fill="#4a8a9a" opacity="0.6"/>
+</svg>
+

@@ -1,0 +1,28 @@
+# Fresh Nature - Natural Products Website
+
+## About
+Fresh Nature is a natural products company offering eco-friendly, plant-based products for home and personal care.
+
+## Products
+- Natural Deodorant: Aluminum-free, long-lasting protection
+- Hand Wash: Gentle antibacterial formula with natural ingredients
+- Dishwashing Soap: Powerful grease-cutting action with plant-based surfactants
+- Natural Shampoo: Sulfate-free, nourishing hair care
+
+## Website Structure
+- Homepage: / (product listings and company information)
+- Product Pages: /products/{product-slug}
+  - /products/deodorant
+  - /products/hand-wash
+  - /products/dishwashing-soap
+  - /products/shampoo
+
+## Contact
+Email: info@freshnature.com
+
+## Values
+- 100% Natural ingredients
+- Eco-friendly and sustainable
+- Cruelty-free and vegan
+- Safe for sensitive skin
+
