@@ -11,6 +11,7 @@ const products: Record<string, {
   ingredients: string[]
   usage: string
   color: string
+  image?: string
 }> = {
   'deodorant': {
     name: 'Natural Deodorant',
@@ -75,26 +76,29 @@ const products: Record<string, {
     usage: 'Apply directly to sponge or dish. Add warm water and scrub. Rinse thoroughly. For tough grease, let sit for a few minutes before scrubbing.',
     color: 'bg-nature-green',
   },
-  'shampoo': {
-    name: 'Natural Shampoo',
-    description: 'Nourish your hair with plant-based ingredients and essential oils.',
-    longDescription: 'Transform your hair care routine with our natural shampoo. Enriched with botanical extracts and essential oils, it cleanses, nourishes, and strengthens your hair without stripping its natural oils.',
+  'hair-oil': {
+    name: 'Hair Oil',
+    description: 'Nourish and strengthen your hair with our natural hair oil blend.',
+    longDescription: 'Transform your hair care routine with our premium natural hair oil. Enriched with botanical extracts and essential oils, it deeply nourishes, strengthens, and adds shine to your hair while promoting healthy growth.',
     benefits: [
-      'Sulfate-free formula',
-      'Nourishes and strengthens',
+      'Deeply nourishes and moisturizes',
+      'Strengthens hair follicles',
       'Natural shine enhancer',
       'Suitable for all hair types',
+      'Promotes healthy hair growth',
       'No synthetic fragrances'
     ],
     ingredients: [
-      'Aloe vera juice',
       'Argan oil',
+      'Coconut oil',
+      'Jojoba oil',
       'Rosemary extract',
-      'Peppermint essential oil',
-      'Chamomile extract'
+      'Lavender essential oil',
+      'Vitamin E'
     ],
-    usage: 'Wet hair thoroughly. Apply shampoo and massage into scalp and hair. Rinse completely. Follow with conditioner if desired. Use 2-3 times per week.',
+    usage: 'Apply a small amount to damp or dry hair, focusing on ends and mid-lengths. Massage gently into hair and scalp. Can be used as a pre-shampoo treatment, leave-in conditioner, or styling oil. Use 2-3 times per week for best results.',
     color: 'bg-nature-teal',
+    image: '/I_want_to_202512161447-ezgif.com-video-to-webp-converter.webp',
   },
 }
 
@@ -161,10 +165,19 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
       <section className="py-12 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className={`${product.color} rounded-lg h-96 flex items-center justify-center`}>
-              <div className="text-white text-6xl font-bold opacity-80">
-                {product.name.charAt(0)}
-              </div>
+            <div className={`${product.color} rounded-lg h-96 flex items-center justify-center relative overflow-hidden`}>
+              {product.image ? (
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                />
+              ) : (
+                <div className="text-white text-6xl font-bold opacity-80">
+                  {product.name.charAt(0)}
+                </div>
+              )}
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-nature-dark">

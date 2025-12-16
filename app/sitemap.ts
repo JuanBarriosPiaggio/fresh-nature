@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'deodorant',
     'hand-wash',
     'dishwashing-soap',
-    'shampoo',
+    'hair-oil',
   ]
 
   const productPages = products.map((slug) => ({

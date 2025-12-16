@@ -24,11 +24,12 @@ const products = [
     color: 'bg-nature-green',
   },
   {
-    id: 'shampoo',
-    name: 'Natural Shampoo',
-    description: 'Nourish your hair with plant-based ingredients and essential oils.',
-    href: '/products/shampoo',
+    id: 'hair-oil',
+    name: 'Hair Oil',
+    description: 'Nourish and strengthen your hair with our natural hair oil blend.',
+    href: '/products/hair-oil',
     color: 'bg-nature-teal',
+    image: '/I_want_to_202512161447-ezgif.com-video-to-webp-converter.webp',
   },
 ]
 
@@ -69,10 +70,19 @@ export default function Home() {
                 href={product.href}
                 className="group bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow"
               >
-                <div className={`${product.color} h-48 flex items-center justify-center`}>
-                  <div className="text-white text-4xl font-bold opacity-80">
-                    {product.name.charAt(0)}
-                  </div>
+                <div className={`${product.color} h-48 flex items-center justify-center relative overflow-hidden`}>
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="text-white text-4xl font-bold opacity-80">
+                      {product.name.charAt(0)}
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-nature-dark group-hover:text-nature-green transition-colors">

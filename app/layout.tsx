@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Fresh Nature - Natural Products for Your Home',
-  description: 'Discover our range of natural, eco-friendly products including deodorant, hand wash, dishwashing soap, and shampoo.',
+  description: 'Discover our range of natural, eco-friendly products including deodorant, hand wash, dishwashing soap, and hair oil.',
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',
